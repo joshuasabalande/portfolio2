@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0d1117; 
+    color: #ffffff;
+}
+
+header {
+    background: rgba(16, 28, 63, 0.85);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.15);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #00e6e6;
+}
+
+section {
+    padding: 25px;
+    margin: 20px;
+    background: rgba(44, 62, 80, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(16, 28, 63, 0.85);
+    color: #58a6ff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00e6e6;
+    text-shadow: 0 0 10px rgba(0, 230, 230, 0.5);
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00e6e6;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 15px;
+    background: rgba(52, 73, 94, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 0 12px rgba(88, 166, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.4);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #00e6e6;
+}
+
+.team-member h3 {
+    font-size: 1.3rem;
+    color: #58a6ff;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+}
